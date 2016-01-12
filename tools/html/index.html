@@ -1,0 +1,1000 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" dir="ltr" >
+<head>
+  <base href="http://vsetv.net/" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="generator" content="" />
+  <title>Онлайн ТВ</title>
+  <link href="/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+  <link href="/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0" />
+  <link href="/templates/tv/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<link rel="stylesheet" href="/templates/tv/css/template.css" type="text/css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="/templates/tv/js/social.js"></script>
+<script type="text/javascript" src="/jwplayer/jwplayer.js"></script>
+</head>
+<body>
+<script>
+function add_favorite(a) {
+  title=document.title;
+  url=document.location;
+  try {
+    window.external.AddFavorite(url, title);
+  }
+  catch (e) {
+    try {
+      window.sidebar.addPanel(title, url, "");
+    }
+    catch (e) {
+      if (typeof(opera)=="object") {
+        a.rel="sidebar";
+        a.title=title;
+        a.url=url;
+        return true;
+      }
+      else {
+        alert('Нажмите клавиши Ctrl и D чтобы добавить страницу в закладки');
+      }
+    }
+  }
+  return false;
+};
+var height=document.documentElement.clientHeight;
+//height=height-330;
+document.write('<style type="text/css">#scrol{height:'+height+'px;}</style>');
+</script> 
+<div id="con">
+<div class="header"><div class="container"><a class="header-logo" href="http://vsetv.net"></a><a class="izb-logo" href="#" onclick="return add_favorite(this);" alt="Добавить в Избранное"></a>		<div class="moduletableauth">
+					<div class="auth_class">Вход/Регистрация</div>
+<div class="auth_menu">
+<form action="/index.php" method="post" name="login">
+<span class="vertical" style="display: block;">
+<span class="jm-login">
+		
+<span class="login">
+<span class="username">
+<input type="text" name="username" size="18" alt="Логин" value="Логин" onblur="if(this.value=='') this.value='Логин';" onfocus="if(this.value=='Логин') this.value='';" />
+</span>
+<span class="password">
+<input type="password" name="passwd" size="10" alt="Пароль" value="Пароль" onblur="if(this.value=='') this.value='Пароль';" onfocus="if(this.value=='Пароль') this.value='';" />
+</span>
+<input type="hidden" name="remember" value="yes" />
+<span class="login-button-text">
+<button value="Войти" name="Submit" type="submit" title="Войти">Войти</button>
+</span>
+<span class="registration">
+<a href="/component/user/?task=register">Регистрация</a>
+</span>
+<span class="lostpassword">
+<a href="/component/user/reset.html">Восстановить пароль</a>
+</span>
+<span class="lostusername">
+<a href="/component/user/remind.html">Восстановить логин</a>
+</span>
+<input type="hidden" name="option" value="com_user" />
+<input type="hidden" name="task" value="login" />
+<input type="hidden" name="return" value="aHR0cDovL3ZzZXR2Lm5ldC8=" />
+<input type="hidden" name="09012892239032f78476f86afad5cbf8" value="1" /></span></div></span>
+	
+</span>
+</form>		</div>
+	</div></div>
+<div class="con_tv">
+<div class="tv"><div class="componentheading">
+	Онлайн ТВ</div>
+<table class="blog" cellpadding="0" cellspacing="0">
+<tr>
+	<td valign="top">
+				</td>
+</tr>
+
+
+</table>
+</div>
+<div class="left">
+<noindex><div id='trafmag_0b649488'>загрузка...</div><div style="padding: 5px 0px;"></div></noindex>
+<div class="section">
+<ul class="tabs">
+<li class="current">Все</li>
+<li>Группы</li>
+<li>Мои</li>
+</ul>
+<div style="border-top:1px solid #17729e; padding: 2px 0px;">
+
+</div>
+<div class="box visible">
+<div id="scrol">
+<a href="/stbua.html"><div class="kanal"><span>
+<p style="background-position: 0px -595px;"></p>
+<noindex><div class="kanal_title">СТБ</div></noindex>
+<div id="s6" class="k_st"></div>
+<div id="g6" class="gres"></div>
+<div id="k6" class="k_kon"></div>
+<div id="p6" class="kanal_trans"></div>
+</span></div></a>
+<a href="/8.html"><div class="kanal"><span>
+<p style="background-position: 0px -385px;"></p>
+<noindex><div class="kanal_title">Новый канал</div></noindex>
+<div id="s7" class="k_st"></div>
+<div id="g7" class="gres"></div>
+<div id="k7" class="k_kon"></div>
+<div id="p7" class="kanal_trans"></div>
+</span></div></a>
+<a href="/3.html"><div class="kanal"><span>
+<p style="background-position: 0px -70px;"></p>
+<noindex><div class="kanal_title">ICTV</div></noindex>
+<div id="s2" class="k_st"></div>
+<div id="g2" class="gres"></div>
+<div id="k2" class="k_kon"></div>
+<div id="p2" class="kanal_trans"></div>
+</span></div></a>
+<a href="/inter.html"><div class="kanal"><span>
+<p style="background-position: 0px -1295px;"></p>
+<div class="kanal_title">Интер</div>
+<div id="s30" class="k_st"></div>
+<div id="g30" class="gres"></div>
+<div id="k30" class="k_kon"></div>
+<div id="p30" class="kanal_trans"></div>
+</span></div></a>
+<a href="/interplus.html"><div class="kanal"><span>
+<p style="background-position: 0px -1330px;"></p>
+<div class="kanal_title">Интер+</div>
+<div id="s31" class="k_st"></div>
+<div id="g31" class="gres"></div>
+<div id="k31" class="k_kon"></div>
+<div id="p31" class="kanal_trans"></div>
+</span></div></a>
+<a href="/19.html"><div class="kanal"><span>
+<p style="background-position: 0px -105px;"></p>
+<noindex><div class="kanal_title">QTV</div></noindex>
+<div id="s18" class="k_st"></div>
+<div id="g18" class="gres"></div>
+<div id="k18" class="k_kon"></div>
+<div id="p18" class="kanal_trans"></div>
+</span></div></a>
+<a href="/k1.html"><div class="kanal"><span>
+<p style="background-position: 0px -3290px;"></p>
+<div class="kanal_title">К1</div>
+<div id="s87" class="k_st"></div>
+<div id="g87" class="gres"></div>
+<div id="k87" class="k_kon"></div>
+<div id="p87" class="kanal_trans"></div>
+</span></div></a>
+<a href="/k2.html"><div class="kanal"><span>
+<p style="background-position: 0px -3325px;"></p>
+<div class="kanal_title">К2</div>
+<div id="s88" class="k_st"></div>
+<div id="g88" class="gres"></div>
+<div id="k88" class="k_kon"></div>
+<div id="p88" class="kanal_trans"></div>
+</span></div></a>
+<a href="/gamma.html"><div class="kanal"><span>
+<p style="background-position: 0px -3500px;"></p>
+<div class="kanal_title">Гамма</div>
+<div id="s93" class="k_st"></div>
+<div id="g93" class="gres"></div>
+<div id="k93" class="k_kon"></div>
+<div id="p93" class="kanal_trans"></div>
+</span></div></a>
+<a href="/tonis.html"><div class="kanal"><span>
+<p style="background-position: 0px -3640px;"></p>
+<div class="kanal_title">Тонис</div>
+<div id="s97" class="k_st"></div>
+<div id="g97" class="gres"></div>
+<div id="k97" class="k_kon"></div>
+<div id="p97" class="kanal_trans"></div>
+</span></div></a>
+<a href="/12.html"><div class="kanal"><span>
+<p style="background-position: 0px -945px;"></p>
+<noindex><div class="kanal_title">ТНТ-Comedy</div></noindex>
+<div id="s11" class="k_st"></div>
+<div id="g11" class="gres"></div>
+<div id="k11" class="k_kon"></div>
+<div id="p11" class="kanal_trans"></div>
+</span></div></a>
+<a href="/35.html"><div class="kanal"><span>
+<p style="background-position: 0px -3570px;"></p>
+<noindex><div class="kanal_title">Пятница!</div></noindex>
+<div id="s95" class="k_st"></div>
+<div id="g95" class="gres"></div>
+<div id="k95" class="k_kon"></div>
+<div id="p95" class="kanal_trans"></div>
+</span></div></a>
+<a href="/36.html"><div class="kanal"><span>
+<p style="background-position: 0px -3605px;"></p>
+<noindex><div class="kanal_title">Ю-ТВ</div></noindex>
+<div id="s96" class="k_st"></div>
+<div id="g96" class="gres"></div>
+<div id="k96" class="k_kon"></div>
+<div id="p96" class="kanal_trans"></div>
+</span></div></a>
+<a href="/365-dney.html"><div class="kanal"><span>
+<p style="background-position: 0px -4060px;"></p>
+<div class="kanal_title">365 дней</div>
+<div id="s107" class="k_st"></div>
+<div id="g107" class="gres"></div>
+<div id="k107" class="k_kon"></div>
+<div id="p107" class="kanal_trans"></div>
+</span></div></a>
+<a href="/24.html"><div class="kanal"><span>
+<p style="background-position: 0px -1680px;"></p>
+<noindex><div class="kanal_title">Viasat Explore</div></noindex>
+<div id="s41" class="k_st"></div>
+<div id="g41" class="gres"></div>
+<div id="k41" class="k_kon"></div>
+<div id="p41" class="kanal_trans"></div>
+</span></div></a>
+<a href="/26.html"><div class="kanal"><span>
+<p style="background-position: 0px -1750px;"></p>
+<noindex><div class="kanal_title">Viasat History</div></noindex>
+<div id="s43" class="k_st"></div>
+<div id="g43" class="gres"></div>
+<div id="k43" class="k_kon"></div>
+<div id="p43" class="kanal_trans"></div>
+</span></div></a>
+<a href="/travel-and-adventure.html"><div class="kanal"><span>
+<p style="background-position: 0px -3885px;"></p>
+<div class="kanal_title">Travel+adventure</div>
+<div id="s104" class="k_st"></div>
+<div id="g104" class="gres"></div>
+<div id="k104" class="k_kon"></div>
+<div id="p104" class="kanal_trans"></div>
+</span></div></a>
+<a href="/travel-channel.html"><div class="kanal"><span>
+<p style="background-position: 0px -140px;"></p>
+<div class="kanal_title">Travel Channel</div>
+<div id="s21" class="k_st"></div>
+<div id="g21" class="gres"></div>
+<div id="k21" class="k_kon"></div>
+<div id="p21" class="kanal_trans"></div>
+</span></div></a>
+<a href="/24-tehno.html"><div class="kanal"><span>
+<p style="background-position: 0px -3780px;"></p>
+<div class="kanal_title">24 Техно</div>
+<div id="s101" class="k_st"></div>
+<div id="g101" class="gres"></div>
+<div id="k101" class="k_kon"></div>
+<div id="p101" class="kanal_trans"></div>
+</span></div></a>
+<a href="/mega.html"><div class="kanal"><span>
+<p style="background-position: 0px -3710px;"></p>
+<div class="kanal_title">МЕГА</div>
+<div id="s99" class="k_st"></div>
+<div id="g99" class="gres"></div>
+<div id="k99" class="k_kon"></div>
+<div id="p99" class="kanal_trans"></div>
+</span></div></a>
+<a href="/oruzhie.html"><div class="kanal"><span>
+<p style="background-position: 0px -3745px;"></p>
+<div class="kanal_title">Оружие</div>
+<div id="s100" class="k_st"></div>
+<div id="g100" class="gres"></div>
+<div id="k100" class="k_kon"></div>
+<div id="p100" class="kanal_trans"></div>
+</span></div></a>
+<a href="/moya-planeta.html"><div class="kanal"><span>
+<p style="background-position: 0px -315px;"></p>
+<div class="kanal_title">Моя планета</div>
+<div id="s24" class="k_st"></div>
+<div id="g24" class="gres"></div>
+<div id="k24" class="k_kon"></div>
+<div id="p24" class="kanal_trans"></div>
+</span></div></a>
+<a href="/25.html"><div class="kanal"><span>
+<p style="background-position: 0px -1715px;"></p>
+<noindex><div class="kanal_title">Viasat Nature</div></noindex>
+<div id="s42" class="k_st"></div>
+<div id="g42" class="gres"></div>
+<div id="k42" class="k_kon"></div>
+<div id="p42" class="kanal_trans"></div>
+</span></div></a>
+<a href="/zoopark.html"><div class="kanal"><span>
+<p style="background-position: 0px -3850px;"></p>
+<div class="kanal_title">ZOOпарк</div>
+<div id="s103" class="k_st"></div>
+<div id="g103" class="gres"></div>
+<div id="k103" class="k_kon"></div>
+<div id="p103" class="kanal_trans"></div>
+</span></div></a>
+<a href="/37.html"><div class="kanal"><span>
+<p style="background-position: 0px -3815px;"></p>
+<noindex><div class="kanal_title">Живая планета</div></noindex>
+<div id="s102" class="k_st"></div>
+<div id="g102" class="gres"></div>
+<div id="k102" class="k_kon"></div>
+<div id="p102" class="kanal_trans"></div>
+</span></div></a>
+<a href="/ocean-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -420px;"></p>
+<div class="kanal_title">Ocean TV</div>
+<div id="s19" class="k_st"></div>
+<div id="g19" class="gres"></div>
+<div id="k19" class="k_kon"></div>
+<div id="p19" class="kanal_trans"></div>
+</span></div></a>
+<a href="/ohotnik-i-rybolov.html"><div class="kanal"><span>
+<p style="background-position: 0px -3535px;"></p>
+<div class="kanal_title">Охотник и рыболов</div>
+<div id="s94" class="k_st"></div>
+<div id="g94" class="gres"></div>
+<div id="k94" class="k_kon"></div>
+<div id="p94" class="kanal_trans"></div>
+</span></div></a>
+<a href="/trofej.html"><div class="kanal"><span>
+<p style="background-position: 0px -3675px;"></p>
+<div class="kanal_title">Трофей</div>
+<div id="s98" class="k_st"></div>
+<div id="g98" class="gres"></div>
+<div id="k98" class="k_kon"></div>
+<div id="p98" class="kanal_trans"></div>
+</span></div></a>
+<a href="/ctc-love.html"><div class="kanal"><span>
+<p style="background-position: 0px -1960px;"></p>
+<div class="kanal_title">СТС Love</div>
+<div id="s49" class="k_st"></div>
+<div id="g49" class="gres"></div>
+<div id="k49" class="k_kon"></div>
+<div id="p49" class="kanal_trans"></div>
+</span></div></a>
+<a href="/24-dok.html"><div class="kanal"><span>
+<p style="background-position: 0px -2170px;"></p>
+<div class="kanal_title">24 Док</div>
+<div id="s55" class="k_st"></div>
+<div id="g55" class="gres"></div>
+<div id="k55" class="k_kon"></div>
+<div id="p55" class="kanal_trans"></div>
+</span></div></a>
+<a href="/domkino.html"><div class="kanal"><span>
+<p style="background-position: 0px -2240px;"></p>
+<div class="kanal_title">Дом кино</div>
+<div id="s57" class="k_st"></div>
+<div id="g57" class="gres"></div>
+<div id="k57" class="k_kon"></div>
+<div id="p57" class="kanal_trans"></div>
+</span></div></a>
+<a href="/zvezda.html"><div class="kanal"><span>
+<p style="background-position: 0px 0px;"></p>
+<div class="kanal_title">Звезда</div>
+<div id="s0" class="k_st"></div>
+<div id="g0" class="gres"></div>
+<div id="k0" class="k_kon"></div>
+<div id="p0" class="kanal_trans"></div>
+</span></div></a>
+<a href="/enter-film.html"><div class="kanal"><span>
+<p style="background-position: 0px -35px;"></p>
+<div class="kanal_title">Enter-фильм</div>
+<div id="s1" class="k_st"></div>
+<div id="g1" class="gres"></div>
+<div id="k1" class="k_kon"></div>
+<div id="p1" class="kanal_trans"></div>
+</span></div></a>
+<a href="/evrokino.html"><div class="kanal"><span>
+<p style="background-position: 0px -245px;"></p>
+<div class="kanal_title">Еврокино</div>
+<div id="s23" class="k_st"></div>
+<div id="g23" class="gres"></div>
+<div id="k23" class="k_kon"></div>
+<div id="p23" class="kanal_trans"></div>
+</span></div></a>
+<a href="/nst.html"><div class="kanal"><span>
+<p style="background-position: 0px -2030px;"></p>
+<div class="kanal_title">НСТ</div>
+<div id="s51" class="k_st"></div>
+<div id="g51" class="gres"></div>
+<div id="k51" class="k_kon"></div>
+<div id="p51" class="kanal_trans"></div>
+</span></div></a>
+<a href="/indiya-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -4095px;"></p>
+<div class="kanal_title">Индия ТВ</div>
+<div id="s108" class="k_st"></div>
+<div id="g108" class="gres"></div>
+<div id="k108" class="k_kon"></div>
+<div id="p108" class="kanal_trans"></div>
+</span></div></a>
+<a href="/komediya.html"><div class="kanal"><span>
+<p style="background-position: 0px -4025px;"></p>
+<div class="kanal_title">Комедия ТВ</div>
+<div id="s109" class="k_st"></div>
+<div id="g109" class="gres"></div>
+<div id="k109" class="k_kon"></div>
+<div id="p109" class="kanal_trans"></div>
+</span></div></a>
+<a href="/illyuzion-pl.html"><div class="kanal"><span>
+<p style="background-position: 0px -525px;"></p>
+<div class="kanal_title">Иллюзион+</div>
+<div id="s27" class="k_st"></div>
+<div id="g27" class="gres"></div>
+<div id="k27" class="k_kon"></div>
+<div id="p27" class="kanal_trans"></div>
+</span></div></a>
+<a href="/illuzionrus.html"><div class="kanal"><span>
+<p style="background-position: 0px -560px;"></p>
+<div class="kanal_title">Русский иллюзион</div>
+<div id="s28" class="k_st"></div>
+<div id="g28" class="gres"></div>
+<div id="k28" class="k_kon"></div>
+<div id="p28" class="kanal_trans"></div>
+</span></div></a>
+<a href="/amedia1.html"><div class="kanal"><span>
+<p style="background-position: 0px -2205px;"></p>
+<div class="kanal_title">Amedia 1</div>
+<div id="s56" class="k_st"></div>
+<div id="g56" class="gres"></div>
+<div id="k56" class="k_kon"></div>
+<div id="p56" class="kanal_trans"></div>
+</span></div></a>
+<a href="/tv-21.html"><div class="kanal"><span>
+<p style="background-position: 0px -1995px;"></p>
+<div class="kanal_title">TV XXI (TV 21)</div>
+<div id="s50" class="k_st"></div>
+<div id="g50" class="gres"></div>
+<div id="k50" class="k_kon"></div>
+<div id="p50" class="kanal_trans"></div>
+</span></div></a>
+<a href="/27.html"><div class="kanal"><span>
+<p style="background-position: 0px -1785px;"></p>
+<noindex><div class="kanal_title">TV1000</div></noindex>
+<div id="s44" class="k_st"></div>
+<div id="g44" class="gres"></div>
+<div id="k44" class="k_kon"></div>
+<div id="p44" class="kanal_trans"></div>
+</span></div></a>
+<a href="/28.html"><div class="kanal"><span>
+<p style="background-position: 0px -1820px;"></p>
+<noindex><div class="kanal_title">TV1000 Action</div></noindex>
+<div id="s45" class="k_st"></div>
+<div id="g45" class="gres"></div>
+<div id="k45" class="k_kon"></div>
+<div id="p45" class="kanal_trans"></div>
+</span></div></a>
+<a href="/29.html"><div class="kanal"><span>
+<p style="background-position: 0px -1855px;"></p>
+<noindex><div class="kanal_title">TV1000 Русское Кино</div></noindex>
+<div id="s46" class="k_st"></div>
+<div id="g46" class="gres"></div>
+<div id="k46" class="k_kon"></div>
+<div id="p46" class="kanal_trans"></div>
+</span></div></a>
+<a href="/30.html"><div class="kanal"><span>
+<p style="background-position: 0px -1890px;"></p>
+<noindex><div class="kanal_title">TV1000 Comedy</div></noindex>
+<div id="s47" class="k_st"></div>
+<div id="g47" class="gres"></div>
+<div id="k47" class="k_kon"></div>
+<div id="p47" class="kanal_trans"></div>
+</span></div></a>
+<a href="/set.html"><div class="kanal"><span>
+<p style="background-position: 0px -2065px;"></p>
+<div class="kanal_title">SET (Sony TV)</div>
+<div id="s52" class="k_st"></div>
+<div id="g52" class="gres"></div>
+<div id="k52" class="k_kon"></div>
+<div id="p52" class="kanal_trans"></div>
+</span></div></a>
+<a href="/sony-turbo.html"><div class="kanal"><span>
+<p style="background-position: 0px -2100px;"></p>
+<div class="kanal_title">Sony Turbo</div>
+<div id="s53" class="k_st"></div>
+<div id="g53" class="gres"></div>
+<div id="k53" class="k_kon"></div>
+<div id="p53" class="kanal_trans"></div>
+</span></div></a>
+<a href="/sony-sci-fi.html"><div class="kanal"><span>
+<p style="background-position: 0px -2135px;"></p>
+<div class="kanal_title">Sony Sci-Fi</div>
+<div id="s54" class="k_st"></div>
+<div id="g54" class="gres"></div>
+<div id="k54" class="k_kon"></div>
+<div id="p54" class="kanal_trans"></div>
+</span></div></a>
+<a href="/boec.html"><div class="kanal"><span>
+<p style="background-position: 0px -3990px;"></p>
+<div class="kanal_title">Боец ТВ</div>
+<div id="s86" class="k_st"></div>
+<div id="g86" class="gres"></div>
+<div id="k86" class="k_kon"></div>
+<div id="p86" class="kanal_trans"></div>
+</span></div></a>
+<a href="/khl-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -3045px;"></p>
+<div class="kanal_title">КХЛ-ТВ</div>
+<div id="s80" class="k_st"></div>
+<div id="g80" class="gres"></div>
+<div id="k80" class="k_kon"></div>
+<div id="p80" class="kanal_trans"></div>
+</span></div></a>
+<a href="/32.html"><div class="kanal"><span>
+<p style="background-position: 0px -3115px;"></p>
+<noindex><div class="kanal_title">Спорт 1</div></noindex>
+<div id="s82" class="k_st"></div>
+<div id="g82" class="gres"></div>
+<div id="k82" class="k_kon"></div>
+<div id="p82" class="kanal_trans"></div>
+</span></div></a>
+<a href="/sport-1-ukraina.html"><div class="kanal"><span>
+<p style="background-position: 0px -3150px;"></p>
+<div class="kanal_title">Спорт 1 Украина</div>
+<div id="s83" class="k_st"></div>
+<div id="g83" class="gres"></div>
+<div id="k83" class="k_kon"></div>
+<div id="p83" class="kanal_trans"></div>
+</span></div></a>
+<a href="/sport-2-ukraina.html"><div class="kanal"><span>
+<p style="background-position: 0px -3185px;"></p>
+<div class="kanal_title">Спорт 2 Украина</div>
+<div id="s84" class="k_st"></div>
+<div id="g84" class="gres"></div>
+<div id="k84" class="k_kon"></div>
+<div id="p84" class="kanal_trans"></div>
+</span></div></a>
+<a href="/futbol.html"><div class="kanal"><span>
+<p style="background-position: 0px -3080px;"></p>
+<div class="kanal_title">Телеканал футбол</div>
+<div id="s81" class="k_st"></div>
+<div id="g81" class="gres"></div>
+<div id="k81" class="k_kon"></div>
+<div id="p81" class="kanal_trans"></div>
+</span></div></a>
+<a href="/33.html"><div class="kanal"><span>
+<p style="background-position: 0px -3220px;"></p>
+<noindex><div class="kanal_title">Viasat Sport</div></noindex>
+<div id="s85" class="k_st"></div>
+<div id="g85" class="gres"></div>
+<div id="k85" class="k_kon"></div>
+<div id="p85" class="kanal_trans"></div>
+</span></div></a>
+<a href="/avto24.html"><div class="kanal"><span>
+<p style="background-position: 0px -1365px;"></p>
+<div class="kanal_title">Авто24</div>
+<div id="s32" class="k_st"></div>
+<div id="g32" class="gres"></div>
+<div id="k32" class="k_kon"></div>
+<div id="p32" class="kanal_trans"></div>
+</span></div></a>
+<a href="/avto-plyus.html"><div class="kanal"><span>
+<p style="background-position: 0px -3955px;"></p>
+<div class="kanal_title">Авто Плюс</div>
+<div id="s106" class="k_st"></div>
+<div id="g106" class="gres"></div>
+<div id="k106" class="k_kon"></div>
+<div id="p106" class="kanal_trans"></div>
+</span></div></a>
+<a href="/23.html"><div class="kanal"><span>
+<p style="background-position: 0px -1645px;"></p>
+<noindex><div class="kanal_title">Первый автомобильный</div></noindex>
+<div id="s40" class="k_st"></div>
+<div id="g40" class="gres"></div>
+<div id="k40" class="k_kon"></div>
+<div id="p40" class="kanal_trans"></div>
+</span></div></a>
+<a href="/2x2.html"><div class="kanal"><span>
+<p style="background-position: 0px -1400px;"></p>
+<div class="kanal_title">2x2</div>
+<div id="s33" class="k_st"></div>
+<div id="g33" class="gres"></div>
+<div id="k33" class="k_kon"></div>
+<div id="p33" class="kanal_trans"></div>
+</span></div></a>
+<a href="/cartoon-network.html"><div class="kanal"><span>
+<p style="background-position: 0px -1575px;"></p>
+<div class="kanal_title">Cartoon Network</div>
+<div id="s35" class="k_st"></div>
+<div id="g35" class="gres"></div>
+<div id="k35" class="k_kon"></div>
+<div id="p35" class="kanal_trans"></div>
+</span></div></a>
+<a href="/disney-channel.html"><div class="kanal"><span>
+<p style="background-position: 0px -1435px;"></p>
+<div class="kanal_title">Disney Channel</div>
+<div id="s34" class="k_st"></div>
+<div id="g34" class="gres"></div>
+<div id="k34" class="k_kon"></div>
+<div id="p34" class="kanal_trans"></div>
+</span></div></a>
+<a href="/nickelodeon.html"><div class="kanal"><span>
+<p style="background-position: 0px -1470px;"></p>
+<div class="kanal_title">Nickelodeon</div>
+<div id="s36" class="k_st"></div>
+<div id="g36" class="gres"></div>
+<div id="k36" class="k_kon"></div>
+<div id="p36" class="kanal_trans"></div>
+</span></div></a>
+<a href="/detskij.html"><div class="kanal"><span>
+<p style="background-position: 0px -1540px;"></p>
+<div class="kanal_title">Детский</div>
+<div id="s38" class="k_st"></div>
+<div id="g38" class="gres"></div>
+<div id="k38" class="k_kon"></div>
+<div id="p38" class="kanal_trans"></div>
+</span></div></a>
+<a href="/karusel.html"><div class="kanal"><span>
+<p style="background-position: 0px -1505px;"></p>
+<div class="kanal_title">Карусель</div>
+<div id="s37" class="k_st"></div>
+<div id="g37" class="gres"></div>
+<div id="k37" class="k_kon"></div>
+<div id="p37" class="kanal_trans"></div>
+</span></div></a>
+<a href="/piksel.html"><div class="kanal"><span>
+<p style="background-position: 0px -490px;"></p>
+<div class="kanal_title">Пиксель</div>
+<div id="s25" class="k_st"></div>
+<div id="g25" class="gres"></div>
+<div id="k25" class="k_kon"></div>
+<div id="p25" class="kanal_trans"></div>
+</span></div></a>
+<a href="/radost-moja.html"><div class="kanal"><span>
+<p style="background-position: 0px -1610px;"></p>
+<div class="kanal_title">Радость моя</div>
+<div id="s39" class="k_st"></div>
+<div id="g39" class="gres"></div>
+<div id="k39" class="k_kon"></div>
+<div id="p39" class="kanal_trans"></div>
+</span></div></a>
+<a href="/maxxi-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -1925px;"></p>
+<div class="kanal_title">Макси ТВ</div>
+<div id="s48" class="k_st"></div>
+<div id="g48" class="gres"></div>
+<div id="k48" class="k_kon"></div>
+<div id="p48" class="kanal_trans"></div>
+</span></div></a>
+<a href="/112-ukrana.html"><div class="kanal"><span>
+<p style="background-position: 0px -2730px;"></p>
+<div class="kanal_title">112 Україна</div>
+<div id="s71" class="k_st"></div>
+<div id="g71" class="gres"></div>
+<div id="k71" class="k_kon"></div>
+<div id="p71" class="kanal_trans"></div>
+</span></div></a>
+<a href="/24-telekanal-novin.html"><div class="kanal"><span>
+<p style="background-position: 0px -665px;"></p>
+<div class="kanal_title">24 Телеканал</div>
+<div id="s22" class="k_st"></div>
+<div id="g22" class="gres"></div>
+<div id="k22" class="k_kon"></div>
+<div id="p22" class="kanal_trans"></div>
+</span></div></a>
+<a href="/5-kanal-ukraina.html"><div class="kanal"><span>
+<p style="background-position: 0px -2765px;"></p>
+<div class="kanal_title">5 канал Украина</div>
+<div id="s72" class="k_st"></div>
+<div id="g72" class="gres"></div>
+<div id="k72" class="k_kon"></div>
+<div id="p72" class="kanal_trans"></div>
+</span></div></a>
+<a href="/hromadske.html"><div class="kanal"><span>
+<p style="background-position: 0px -2905px;"></p>
+<div class="kanal_title">Громадське ТВ</div>
+<div id="s76" class="k_st"></div>
+<div id="g76" class="gres"></div>
+<div id="k76" class="k_kon"></div>
+<div id="p76" class="kanal_trans"></div>
+</span></div></a>
+<a href="/espreso-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -2800px;"></p>
+<div class="kanal_title">Еспресо TV</div>
+<div id="s73" class="k_st"></div>
+<div id="g73" class="gres"></div>
+<div id="k73" class="k_kon"></div>
+<div id="p73" class="kanal_trans"></div>
+</span></div></a>
+<a href="/ubr.html"><div class="kanal"><span>
+<p style="background-position: 0px -2835px;"></p>
+<div class="kanal_title">UBR (УБР)</div>
+<div id="s74" class="k_st"></div>
+<div id="g74" class="gres"></div>
+<div id="k74" class="k_kon"></div>
+<div id="p74" class="kanal_trans"></div>
+</span></div></a>
+<a href="/chp-info.html"><div class="kanal"><span>
+<p style="background-position: 0px -2940px;"></p>
+<div class="kanal_title">ЧП.INFO (Магнолия-ТВ)</div>
+<div id="s77" class="k_st"></div>
+<div id="g77" class="gres"></div>
+<div id="k77" class="k_kon"></div>
+<div id="p77" class="kanal_trans"></div>
+</span></div></a>
+<a href="/euronews.html"><div class="kanal"><span>
+<p style="background-position: 0px -2975px;"></p>
+<div class="kanal_title">Euronews</div>
+<div id="s78" class="k_st"></div>
+<div id="g78" class="gres"></div>
+<div id="k78" class="k_kon"></div>
+<div id="p78" class="kanal_trans"></div>
+</span></div></a>
+<a href="/1hd.html"><div class="kanal"><span>
+<p style="background-position: 0px -2660px;"></p>
+<div class="kanal_title">1HD (Первый HD)</div>
+<div id="s69" class="k_st"></div>
+<div id="g69" class="gres"></div>
+<div id="k69" class="k_kon"></div>
+<div id="p69" class="kanal_trans"></div>
+</span></div></a>
+<a href="/9-volna.html"><div class="kanal"><span>
+<p style="background-position: 0px -2380px;"></p>
+<div class="kanal_title">9 волна</div>
+<div id="s61" class="k_st"></div>
+<div id="g61" class="gres"></div>
+<div id="k61" class="k_kon"></div>
+<div id="p61" class="kanal_trans"></div>
+</span></div></a>
+<a href="/a-one.html"><div class="kanal"><span>
+<p style="background-position: 0px -2415px;"></p>
+<div class="kanal_title">A-one</div>
+<div id="s62" class="k_st"></div>
+<div id="g62" class="gres"></div>
+<div id="k62" class="k_kon"></div>
+<div id="p62" class="kanal_trans"></div>
+</span></div></a>
+<a href="/bridge-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -2555px;"></p>
+<div class="kanal_title">Bridge TV</div>
+<div id="s66" class="k_st"></div>
+<div id="g66" class="gres"></div>
+<div id="k66" class="k_kon"></div>
+<div id="p66" class="kanal_trans"></div>
+</span></div></a>
+<a href="/europaplus.html"><div class="kanal"><span>
+<p style="background-position: 0px -3010px;"></p>
+<div class="kanal_title">Europa Plus TV</div>
+<div id="s79" class="k_st"></div>
+<div id="g79" class="gres"></div>
+<div id="k79" class="k_kon"></div>
+<div id="p79" class="kanal_trans"></div>
+</span></div></a>
+<a href="/31.html"><div class="kanal"><span>
+<p style="background-position: 0px -2485px;"></p>
+<noindex><div class="kanal_title">M1</div></noindex>
+<div id="s64" class="k_st"></div>
+<div id="g64" class="gres"></div>
+<div id="k64" class="k_kon"></div>
+<div id="p64" class="kanal_trans"></div>
+</span></div></a>
+<a href="/muz-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -2625px;"></p>
+<div class="kanal_title">Муз-ТВ</div>
+<div id="s68" class="k_st"></div>
+<div id="g68" class="gres"></div>
+<div id="k68" class="k_kon"></div>
+<div id="p68" class="kanal_trans"></div>
+</span></div></a>
+<a href="/music-box-ua.html"><div class="kanal"><span>
+<p style="background-position: 0px -2590px;"></p>
+<div class="kanal_title">Music Box UA</div>
+<div id="s67" class="k_st"></div>
+<div id="g67" class="gres"></div>
+<div id="k67" class="k_kon"></div>
+<div id="p67" class="kanal_trans"></div>
+</span></div></a>
+<a href="/shanson-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -3920px;"></p>
+<div class="kanal_title">Шансон ТВ</div>
+<div id="s105" class="k_st"></div>
+<div id="g105" class="gres"></div>
+<div id="k105" class="k_kon"></div>
+<div id="p105" class="kanal_trans"></div>
+</span></div></a>
+<a href="/otv.html"><div class="kanal"><span>
+<p style="background-position: 0px -2520px;"></p>
+<div class="kanal_title">OTV</div>
+<div id="s65" class="k_st"></div>
+<div id="g65" class="gres"></div>
+<div id="k65" class="k_kon"></div>
+<div id="p65" class="kanal_trans"></div>
+</span></div></a>
+<a href="/ru-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -2450px;"></p>
+<div class="kanal_title">RU TV</div>
+<div id="s63" class="k_st"></div>
+<div id="g63" class="gres"></div>
+<div id="k63" class="k_kon"></div>
+<div id="p63" class="kanal_trans"></div>
+</span></div></a>
+<a href="/russian-music-box.html"><div class="kanal"><span>
+<p style="background-position: 0px -2695px;"></p>
+<div class="kanal_title">Russian Music Box</div>
+<div id="s70" class="k_st"></div>
+<div id="g70" class="gres"></div>
+<div id="k70" class="k_kon"></div>
+<div id="p70" class="kanal_trans"></div>
+</span></div></a>
+<a href="/fashion-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -2275px;"></p>
+<div class="kanal_title">Fashion TV</div>
+<div id="s60" class="k_st"></div>
+<div id="g60" class="gres"></div>
+<div id="k60" class="k_kon"></div>
+<div id="p60" class="kanal_trans"></div>
+</span></div></a>
+<a href="/style-tv.html"><div class="kanal"><span>
+<p style="background-position: 0px -2310px;"></p>
+<div class="kanal_title">Style TV</div>
+<div id="s59" class="k_st"></div>
+<div id="g59" class="gres"></div>
+<div id="k59" class="k_kon"></div>
+<div id="p59" class="kanal_trans"></div>
+</span></div></a>
+<a href="/world-fashion.html"><div class="kanal"><span>
+<p style="background-position: 0px -2345px;"></p>
+<div class="kanal_title">World Fashion</div>
+<div id="s58" class="k_st"></div>
+<div id="g58" class="gres"></div>
+<div id="k58" class="k_kon"></div>
+<div id="p58" class="kanal_trans"></div>
+</span></div></a>
+<a href="/glas.html"><div class="kanal"><span>
+<p style="background-position: 0px -3465px;"></p>
+<div class="kanal_title">Глас</div>
+<div id="s92" class="k_st"></div>
+<div id="g92" class="gres"></div>
+<div id="k92" class="k_kon"></div>
+<div id="p92" class="kanal_trans"></div>
+</span></div></a>
+<a href="/soyuz.html"><div class="kanal"><span>
+<p style="background-position: 0px -3395px;"></p>
+<div class="kanal_title">Союз</div>
+<div id="s90" class="k_st"></div>
+<div id="g90" class="gres"></div>
+<div id="k90" class="k_kon"></div>
+<div id="p90" class="kanal_trans"></div>
+</span></div></a>
+<a href="/spas.html"><div class="kanal"><span>
+<p style="background-position: 0px -3430px;"></p>
+<div class="kanal_title">СПАС</div>
+<div id="s91" class="k_st"></div>
+<div id="g91" class="gres"></div>
+<div id="k91" class="k_kon"></div>
+<div id="p91" class="kanal_trans"></div>
+</span></div></a>
+</div>  
+  
+<script type="text/javascript">
+$("#scrol").scroll(function(){
+sessionStorage.setItem('scrol', $(this).scrollTop());      
+});
+if(sessionStorage.getItem('scrol')) {
+$("#scrol").scrollTop(sessionStorage.getItem('scrol'));
+};
+function on(){
+$("#o_kan").removeClass( );
+eval("document.all.ontext.style.display='none';"); 
+eval("document.all.offtext.style.display='inline';"); 
+};
+function off(){
+$("#o_kan").addClass("op_k");
+eval("document.all.ontext.style.display='inline';"); 
+eval("document.all.offtext.style.display='none';"); 
+};
+pr = function() {	
+jQuery.getJSON('tv/vse.php', {cache: false}, function(json){
+for(var n = 0; n < 150; n++) {
+$("#con .kanal").each(function(){
+$(this).find("#s" + n)
+.html(json[n][1]);
+$(this).find("#g" + n)
+.html(json[n][2]);
+$(this).find("#k" + n)
+.html(json[n][3]);
+$(this).find("#p" + n)
+.html(json[n][4]);
+});};});};
+$(document).ready(function(){
+pr();
+setInterval('pr()',100000);
+});
+</script>
+  
+
+</div>
+
+<div class="box">
+<select name="sel" class="form-select" id="edit-vote-3" onchange="change()" style="width: 100%; margin: 10px 0px;border: 2px solid #17729E;">
+<option value="1"><a href="#">Авто</a></option>
+<option value="2"><a href="#">Детям<a></option>
+<option value="3"><a href="#">Кино<a></option>
+<option value="4"><a href="#">Мода<a></option>
+<option value="5"><a href="#">Музыка</a></option>
+<option value="6"><a href="#">Новости, Бизнес<a></option>
+<option value="7"><a href="#">Общественные Укр.<a></option>
+<option value="8"><a href="#">Общественные Рус.<a></option>
+<option value="9"><a href="#">Познавательные</a></option>
+<option value="10"><a href="#">Природа, Животные</a></option>
+<option value="11"><a href="#">Развлечения, Юмор<a></option>
+<option value="12"><a href="#">Религиозные, Духовные<a></option>
+<option value="13"><a href="#">Спорт<a></option>
+<option value="14"><a href="#">Для взрослых (18+)<a></option>
+</select>
+<div id="group_tv"></div>
+<script type="text/javascript">
+function getCookie(name) {
+var matches = document.cookie.match(new RegExp(
+"(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+))
+return matches ? decodeURIComponent(matches[1]) : undefined
+}       
+function setCookie(name, value, props) {
+ props = props || {}
+var exp = props.expires
+if (typeof exp == "number" && exp) {
+var d = new Date()
+d.setTime(d.getTime() + exp*1000)
+exp = props.expires = d
+}
+if(exp && exp.toUTCString) { props.expires = exp.toUTCString() }
+value = encodeURIComponent(value)
+var updatedCookie = name + "=" + value
+for(var propName in props){
+updatedCookie += "; " + propName
+var propValue = props[propName]
+if(propValue !== true){ updatedCookie += "=" + propValue }
+}
+document.cookie = updatedCookie
+};
+var elemm= document.getElementsByName('sel')[0];
+elemm.selectedIndex=getCookie('OptionIndex') || 0;
+var ds=elemm.selectedIndex;
+$.ajax({
+url: "tv/"+ds+".php",
+cache: false,
+success: function(html){
+$("#group_tv").html(html);
+}});
+function change() {
+var elem=document.getElementsByName('sel')[0];
+var currentOptionIndex=elem.selectedIndex;
+setCookie('OptionIndex', currentOptionIndex);
+var s=document.getElementById('edit-vote-3');
+var d=s.selectedIndex;
+$.ajax({
+url: "tv/"+d+".php",
+cache: false,
+success: function(html){
+$("#group_tv").html(html);
+pr();
+}});
+};
+</script>
+</div>
+<div class="box">		<div class="moduletable">
+					<span style="font-size: 16px;">*Для возможности создания своего списка каналов нужно авторизоваться или зарегистрироваться.</span>
+		</div>
+	</div>
+</div></div>
+<div class="footer"><ul class="menu-nav"><li><a href="http://vsetv.net"><span>Главная</span></a></li><li><a href="/cont.html"><span>Правообладателям / Контакты</span></a></li></ul></div>
+</div></div>
+<script type="text/javascript">
+$(function() {
+$('ul.tab_fl').on('click', 'li:not(.currents)', function() {
+$(this).addClass('currents').siblings().removeClass('currents')
+.parents('div.sections').find('div.boxs').eq($(this).index()).fadeIn(150).siblings('div.boxs').hide();});
+$('.auth_class').click(function () {
+$('.auth_menu').slideToggle('medium');});
+$('ul.tabs').each(function(i) {
+var storage = localStorage.getItem('tab'+i);
+if (storage) $(this).find('li').eq(storage).addClass('current').siblings().removeClass('current')
+.parents('div.section').find('div.box').hide().eq(storage).show();
+})
+$('ul.tabs').on('click', 'li:not(.current)', function() {
+$(this).addClass('current').siblings().removeClass('current')
+.parents('div.section').find('div.box').eq($(this).index()).fadeIn(150).siblings('div.box').hide();
+var ulIndex = $('ul.tabs').index($(this).parents('ul.tabs'));
+localStorage.removeItem('tab'+ulIndex);
+localStorage.setItem('tab'+ulIndex, $(this).index());
+})});
+</script>
+<noindex><script type="text/javascript">
+new Image().src = "//counter.yadro.ru/hit?r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";"+Math.random();</script>
+<script type='text/javascript' src='http://trafmag.com/sitecode-04865-9118.js'></script>
+<script type="text/javascript" src="//recreativ.ru/rcode.79390e3a12.js"></script></noindex>
+</body>
+</html>
