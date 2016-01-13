@@ -1,3 +1,5 @@
+from random import randint
+
 RE_VIDEO_URL = Regex('m=video&file=(?P<video_url>[^"]+)"')
 
 def MetadataObjectForURL(url):
@@ -22,10 +24,25 @@ def MediaObjectsForURL(url):
 
     Log.Debug("Media objects requested: %s" % (url))
 
+    sel = randint(1,2)
+
+    if sel == 1:
+        part = PartObject(key = HTTPLiveStreamURL(Callback(PlayVideo, url=url)))
+    else:
+        part = PartObject(key = Callback(PlayVideo, url=url))
+
     return [
         MediaObject(
+            video_codec = VideoCodec.H264,
+            audio_codec = AudioCodec.AAC,
+            # container = Container.MP4,
+            video_resolution = 576,
+            audio_channels = 2,
+            optimized_for_streaming = True,
             parts = [
-                PartObject(key = Callback(PlayVideo, url=url))
+                # PartObject(key = HTTPLiveStreamURL(Callback(PlayVideo, url=url)))
+                # PartObject(key = Callback(PlayVideo, url=url))
+                part
             ]
         )
     ]
@@ -38,4 +55,18 @@ def PlayVideo(url):
 
     Log.Debug("Requested url: %s, Playing url: %s" % (url, video_url))
 
-    return Redirect(video_url)
+    sel = randint(1,4)
+
+    if sel == 1:
+        return IndirectResponse(VideoClipObject, key=video_url)
+    elif sel == 2:
+        return IndirectResponse(VideoClipObject, HTTPLiveStreamURL(url=video_url))
+    elif sel == 3:
+        return Redirect(video_url)
+    else:
+        return HTTP.Request(video_url).content
+
+    # return IndirectResponse(VideoClipObject, key=video_url)
+    # return IndirectResponse(VideoClipObject, HTTPLiveStreamURL(url=video_url))
+    # return Redirect(video_url)
+    # return HTTP.Request(video_url).content
