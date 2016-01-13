@@ -26,11 +26,6 @@ def MediaObjectsForURL(url):
 
     sel = randint(1,2)
 
-    if sel == 1:
-        part = PartObject(key = HTTPLiveStreamURL(Callback(PlayVideo, url=url)))
-    else:
-        part = PartObject(key = Callback(PlayVideo, url=url))
-
     return [
         MediaObject(
             video_codec = VideoCodec.H264,
@@ -41,8 +36,7 @@ def MediaObjectsForURL(url):
             optimized_for_streaming = True,
             parts = [
                 # PartObject(key = HTTPLiveStreamURL(Callback(PlayVideo, url=url)))
-                # PartObject(key = Callback(PlayVideo, url=url))
-                part
+                PartObject(key = Callback(PlayVideo, url=url))
             ]
         )
     ]
@@ -55,18 +49,7 @@ def PlayVideo(url):
 
     Log.Debug("Requested url: %s, Playing url: %s" % (url, video_url))
 
-    sel = randint(1,4)
-
-    if sel == 1:
-        return IndirectResponse(VideoClipObject, key=video_url)
-    elif sel == 2:
-        return IndirectResponse(VideoClipObject, HTTPLiveStreamURL(url=video_url))
-    elif sel == 3:
-        return Redirect(video_url)
-    else:
-        return HTTP.Request(video_url).content
-
     # return IndirectResponse(VideoClipObject, key=video_url)
-    # return IndirectResponse(VideoClipObject, HTTPLiveStreamURL(url=video_url))
+    return IndirectResponse(VideoClipObject, HTTPLiveStreamURL(url=video_url))
     # return Redirect(video_url)
     # return HTTP.Request(video_url).content
