@@ -24,8 +24,6 @@ def MediaObjectsForURL(url):
 
     Log.Debug("Media objects requested: %s" % (url))
 
-    sel = randint(1,2)
-
     return [
         MediaObject(
             video_codec = VideoCodec.H264,
