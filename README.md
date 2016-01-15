@@ -1,18 +1,11 @@
 # Overview
 
 Allows to watch content from site [VseTV.Net](vsetv.net).
+Currently videos are not playing, the problem is logged [here](https://forums.plex.tv/discussion/202747/playing-videos-from-site-vsetv-net#latest).
 
 # Installation
 
-1. Must have [Plex Media Server][GetPlex] installed, obviously;
-2. Download the [zip archive](https://github.com/solvek/VsetvNet.bundle/archive/master.zip) and extract it to Plex plugin folder, for more details read the [official channel installation guide](https://support.plex.tv/hc/en-us/articles/201187656-How-do-I-manually-install-a-channel-):
-  * on Windows: *C:\Users\USERNAME\AppData\Local\Plex Media Server\Plug-ins*
-  * on Mac: *~Library/Application Support/Plex Media Server/Plug-ins*
-  * on Linux: */usr/lib/plexmediaserver/Resources/Plug-ins* or */var/lib/plex/Plex Media Server/Plug-ins*
-  * on FreeBSD *usr/pbi/plexmediaserver-amd64/plexdata/Plex\ Media\ Server/Plug-ins/*
-3. Rename folder from *VsetvNet.bundle-master* to *VsetvNet.bundle*;
-4. Restart the Plex Media Server;
-5. Launch any of [Plex Apps][GetPlex] (that is connected to the server, obviously) and you should see a new category in Your media library called Video Channels or similar.
+Follow [manual installation instructions ](https://support.plex.tv/hc/en-us/articles/201187656-How-do-I-manually-install-a-channel-)from here.
 
 # Useful development information
 
