@@ -1,5 +1,3 @@
-from random import randint
-
 RE_VIDEO_URL = Regex('m=video&file=(?P<video_url>[^"]+)"')
 
 def MetadataObjectForURL(url):
