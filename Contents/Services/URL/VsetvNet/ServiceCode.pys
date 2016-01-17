@@ -1,4 +1,4 @@
-RE_VIDEO_URL = Regex('m=video&file=(?P<video_url>[^"]+)"')
+RE_VIDEO_URL = Regex('["\'=](?P<video_url>https?:\/\/.+\.m3u8.*)["\']')
 
 def MetadataObjectForURL(url):
 
@@ -8,7 +8,13 @@ def MetadataObjectForURL(url):
 
     tv_node = page.xpath('//div[@id="con"]/div[@class="con_tv"]/div[@class="tv"]')[0]
 
-    description = tv_node.xpath('./div[@id="o_kan"]//strong/text()')[0]
+    description = tv_node.xpath('./div[@id="o_kan"]//strong/text()')
+
+    if len(description) > 0:
+        description = description[0]
+    else:
+        description = None
+
     thumb = 'http://vsetv.net/%s' % (tv_node.xpath('./div[@id="o_kan"]/img/@src')[0])
 
     Log.Debug("Meta object requested url: %s, title: %s" % (url, title))
@@ -43,4 +49,4 @@ def PlayVideo(url):
 
     Log.Debug("Requested url: %s, Playing url: %s" % (url, video_url))
 
-    return IndirectResponse(VideoClipObject, url=video_url)
+    return IndirectResponse(VideoClipObject, key=video_url)
