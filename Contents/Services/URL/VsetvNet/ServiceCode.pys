@@ -4,7 +4,7 @@ def MetadataObjectForURL(url):
 
     page = HTML.ElementFromURL(url)
 
-    tv_node = page.xpath('//html/body/div[@id="con"]/div[@class="con_tv"]/div[@class="tv"]')[0]
+    tv_node = page.xpath('//div[@id="con"]/div[@class="con_tv"]/div[@class="tv"]')[0]
 
     title = tv_node.xpath('./h1')[0].text
     description = tv_node.xpath('./div[@id="o_kan"]//strong')[0].tail
