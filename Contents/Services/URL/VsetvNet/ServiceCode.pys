@@ -4,18 +4,20 @@ def MetadataObjectForURL(url):
 
     page = HTML.ElementFromURL(url)
 
+    title = page.xpath('//meta[@name="title"]/@content')[0]
+
     tv_node = page.xpath('//div[@id="con"]/div[@class="con_tv"]/div[@class="tv"]')[0]
 
-    title = tv_node.xpath('./h1')[0].text
-    description = tv_node.xpath('./div[@id="o_kan"]//strong')[0].tail
-    thumb = 'http://vsetv.net/'+tv_node.xpath('./div[@id="o_kan"]/img')[0].get('src')
+    description = tv_node.xpath('./div[@id="o_kan"]//strong/text()')[0]
+    thumb = 'http://vsetv.net/%s' % (tv_node.xpath('./div[@id="o_kan"]/img/@src')[0])
 
     Log.Debug("Meta object requested url: %s, title: %s" % (url, title))
 
     return VideoClipObject(
         title = title,
         summary = description,
-        thumb = Resource.ContentsOfURLWithFallback(thumb))
+        thumb = Resource.ContentsOfURLWithFallback(thumb)
+    )
 
 
 def MediaObjectsForURL(url):
@@ -41,7 +43,4 @@ def PlayVideo(url):
 
     Log.Debug("Requested url: %s, Playing url: %s" % (url, video_url))
 
-    # return IndirectResponse(VideoClipObject, key=video_url)
-    return IndirectResponse(VideoClipObject, HTTPLiveStreamURL(url=video_url))
-    # return Redirect(video_url)
-    # return HTTP.Request(video_url).content
+    return IndirectResponse(VideoClipObject, url=video_url)
