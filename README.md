@@ -1,11 +1,15 @@
 # Overview
 
 Allows to watch content from site [VseTV.Net](vsetv.net).
-Currently videos are not playing, the problem is logged [here](https://forums.plex.tv/discussion/202747/playing-videos-from-site-vsetv-net#latest).
 
 # Installation
 
 Follow [manual installation instructions ](https://support.plex.tv/hc/en-us/articles/201187656-How-do-I-manually-install-a-channel-)from here.
+
+# Tested players
+
+ * Samsung Smart TV
+ * Android Plex TV app
 
 # Useful development information
 
