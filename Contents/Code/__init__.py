@@ -10,7 +10,6 @@ SUBSTITUTIONS = {'stbua' : '7'}
 ####################################################################################################
 def Start():
 
-	Plugin.AddViewGroup("List", viewMode="InfoList", mediaType="items")
 	ObjectContainer.title1 = TITLE
 	ObjectContainer.art = R(ART)
 	DirectoryObject.art = R(ART)
@@ -37,6 +36,7 @@ def MainMenu():
 
 	return oc
 
+####################################################################################################
 @route(PREFIX+'/channels/{group}/{title}')
 def Channels(group, title):
 
@@ -65,11 +65,13 @@ def Channels(group, title):
 		oc.add(VideoClipObject(
 			url = url,
 			title = title,
+			summary = 'Some summary',
 			thumb = Callback(Thumb, url=thumb)
 		))
 
 	return oc
 
+####################################################################################################
 def Thumb(url):
 
   try:
