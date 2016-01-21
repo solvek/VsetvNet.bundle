@@ -55,12 +55,15 @@ def Channels(group, title):
 
 		thumb = WEB_PAGE + '/templates/tv/images/'+file_name+'.png'
 
-		path = './div/span/'
-		titlePath = '/div[contains(@class, "kanal_title")]'
+		span = video.xpath('./div/span')[0]
 
-		title = video.xpath(path+titlePath)[0].text
+		title = span.xpath('.//div[contains(@class, "kanal_title")]')[0].text
 
-		Log.Debug("Clip url: %s, title: %s, thumb url: %s" % (url, title, thumb))
+		# Log.Debug("Span: %s" % XML.StringFromElement(span))
+
+		# channel_id = int(span.xpath('.//div[contains(@class, "gres")]')[0].get('id')[1:])
+
+		# Log.Debug("Clip url: %s, title: %s, thumb url: %s, channel_id: %s" % (url, title, thumb, channel_id))
 
 		oc.add(VideoClipObject(
 			url = url,
