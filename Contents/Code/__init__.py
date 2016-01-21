@@ -3,6 +3,8 @@ WEB_PAGE = 'http://vsetv.net'
 ART    = 'art-default.jpg'
 ICON   = 'icon-default.png'
 
+PREFIX = '/video/vsetvnet'
+
 SUBSTITUTIONS = {'stbua' : '7'}
 
 ####################################################################################################
@@ -15,14 +17,36 @@ def Start():
 	DirectoryObject.thumb = R(ICON)
 
 ####################################################################################################
-@handler('/video/vsetvnet', TITLE)
+@handler(PREFIX, TITLE)
 def MainMenu():
 
-	oc = ObjectContainer(view_group="List")
+	oc = ObjectContainer()
 
-	for video in HTML.ElementFromURL(WEB_PAGE).xpath('//html/body/div[@id="con"]/div[@class="con_tv"]/div[@class="left"]/div[@class="section"]/div[@class="box visible"]/div[@id="scrol"]/a'):
+	for group in HTML.ElementFromURL(WEB_PAGE).xpath('//select[@name="sel"]/option'):
 
-		subpath = video.xpath('./@href')[0]
+		# title = group.text
+		title = group.xpath('./a')[0].text
+		group = int(group.get('value'))-1
+
+		# Log.Debug("Title: %s, group: %s. Current group: %s" % (title, group, XML.StringFromElement(group)))
+
+		oc.add(DirectoryObject(
+		            key = Callback(Channels, group = group, title=title),
+		            title = title
+		        ))
+
+	return oc
+
+@route(PREFIX+'/channels/{group}/{title}')
+def Channels(group, title):
+
+	oc = ObjectContainer(title2 = title)
+
+	query = "%s/tv/%s.php?_=%s" % (WEB_PAGE, group, Util.RandomInt(1000, 9999))
+
+	for video in HTML.ElementFromURL(query).xpath('a'):
+
+		subpath = video.get('href')
 		url = WEB_PAGE + subpath
 		file_name = subpath[1:-5]
 
